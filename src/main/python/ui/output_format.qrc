@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="Languages">
+    <file>Languages/output_format_en.qm</file>
+    <file>Languages/output_format_es.qm</file>
+  </qresource>
+</RCC>
