@@ -45,12 +45,12 @@ class AnonFileSimpleUploader(QMainWindow):
 
         # Config
         # Portable
-        self.config_folder_path = os.path.abspath(os.path.dirname(__file__))
-        self.config_file_path = self.config_folder_path + '/config.ini'
+        """self.config_folder_path = os.path.abspath(os.path.dirname(__file__))
+        self.config_file_path = self.config_folder_path + '/config.ini'"""
 
         # Installable
-        """self.config_folder_path = str(os.getenv('APPDATA')) + '/AnonFileSimpleUploader'
-        self.config_file_path = self.config_folder_path + '/config.ini'"""
+        self.config_folder_path = str(os.getenv('APPDATA')) + '/AnonFileSimpleUploader'
+        self.config_file_path = self.config_folder_path + '/config.ini'
 
         self.output_format = "$short_link$"
         self.apply_conf_file()
