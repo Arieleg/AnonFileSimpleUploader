@@ -75,7 +75,7 @@ class Ui_MainWindow(object):
         self.TableOfFiles.horizontalHeader().setMinimumSectionSize(40)
         self.TableOfFiles.horizontalHeader().setStretchLastSection(True)
         self.TableOfFiles.verticalHeader().setVisible(True)
-        self.TableOfFiles.verticalHeader().setDefaultSectionSize(14)
+        self.TableOfFiles.verticalHeader().setDefaultSectionSize(18)
         self.TableOfFiles.verticalHeader().setMinimumSectionSize(9)
         self.TableOfFiles.verticalHeader().setStretchLastSection(False)
         self.horizontalLayout_2.addWidget(self.TableOfFiles)

@@ -94,7 +94,7 @@
              <bool>true</bool>
             </attribute>
             <attribute name="verticalHeaderDefaultSectionSize">
-             <number>14</number>
+             <number>18</number>
             </attribute>
             <attribute name="verticalHeaderMinimumSectionSize">
              <number>9</number>

@@ -45,12 +45,14 @@ class AnonFileSimpleUploader(QMainWindow):
 
         # Config
         # Portable
-        """self.config_folder_path = os.path.abspath(os.path.dirname(__file__))
-        self.config_file_path = self.config_folder_path + '/config.ini'"""
+        #self.config_folder_path = os.path.abspath(os.path.dirname(__file__))
+        #self.config_file_path = self.config_folder_path + '/config.ini'
 
         # Installable
-        self.config_folder_path = str(os.getenv('APPDATA')) + '/AnonFileSimpleUploader'
-        self.config_file_path = self.config_folder_path + '/config.ini'
+        #self.config_folder_path = str(os.getenv('APPDATA')) + '/AnonFileSimpleUploader'
+        #self.config_file_path = self.config_folder_path + '/config.ini'
+
+
 
         self.output_format = "$short_link$"
         self.apply_conf_file()
@@ -445,6 +447,7 @@ class AnonFileSimpleUploader(QMainWindow):
             config['Languages'] = {'lang': "en"}
             with open(self.config_file_path, 'w') as config_file_path:
                 config.write(config_file_path)
+            self.apply_conf_file()
 
     def retry_all(self):
         for row in range(self.ui.TableOfFiles.rowCount()):
